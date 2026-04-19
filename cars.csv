@@ -1,0 +1,249 @@
+Brand,Car_Name,Price_Lakhs,Rating,Safety_Stars,Mileage_kmpl,Power_BHP,Sales_FY2024
+Maruti Suzuki,Maruti Brezza,8.69,4.5,4.0,21.0,94.5,169897.0
+Maruti Suzuki,Maruti Fronx,7.54,4.6,3.0,24.0,87.5,134735.0
+Maruti Suzuki,Maruti Swift,6.49,4.6,2.0,28.0,74.5,195321.0
+Maruti Suzuki,Maruti Dzire,6.84,4.7,5.0,28.5,74.5,164517.0
+Maruti Suzuki,Maruti Baleno,6.7,4.5,4.0,26.0,82.0,195607.0
+Maruti Suzuki,Maruti Grand Vitara,11.42,4.5,5.0,23.0,94.5,121169.0
+Maruti Suzuki,Maruti Wagon R,5.79,4.5,1.0,28.5,73.0,200177.0
+Maruti Suzuki,Maruti Alto K10,4.23,4.6,2.0,28.5,62.0,111955.0
+Maruti Suzuki,Maruti Ertiga,8.97,4.6,3.0,23.0,94.5,149757.0
+Maruti Suzuki,Maruti XL6,11.83,4.4,3.0,23.0,94.5,45334.0
+Maruti Suzuki,Maruti Celerio,5.64,3.2,2.0,29.5,61.0,39931.0
+Maruti Suzuki,Maruti Jimny,12.76,3.5,3.0,16.0,103.0,17009.0
+Maruti Suzuki,Maruti Ignis,5.85,4.7,3.0,20.0,82.0,32463.0
+Maruti Suzuki,Maruti S-Presso,4.26,4.4,1.0,28.0,61.0,30139.0
+Maruti Suzuki,Maruti Ciaz,9.42,4.3,4.0,24.0,96.0,10337.0
+Maruti Suzuki,Maruti Eeco,5.7,4.6,1.0,22.5,76.0,137139.0
+Maruti Suzuki,Maruti Invicto,25.51,4.6,5.0,23.0,150.0,4395.0
+Maruti Suzuki,Maruti Wagon R Flex Fuel,8.5,4.5,2.0,22.5,78.0,200177.0
+Mahindra,Mahindra Scorpio N,13.99,4.7,5.0,,165.0,141462.0
+Mahindra,Mahindra XUV 3XO,7.99,4.6,5.0,19.0,119.5,53962.0
+Mahindra,Mahindra XUV700,14.49,4.6,5.0,,175.0,79398.0
+Mahindra,Mahindra BE 6,18.9,4.7,5.0,,,
+Mahindra,Mahindra Thar Roxx,12.99,4.7,5.0,13.5,162.0,
+Mahindra,Mahindra Thar,11.5,4.7,4.0,22.5,133.5,65246.0
+Mahindra,Mahindra XEV 9e,21.9,4.7,5.0,,,
+Mahindra,Mahindra Scorpio,13.77,4.8,4.0,15.0,130.0,141462.0
+Mahindra,Mahindra Bolero,9.81,4.6,3.0,16.0,75.0,110841.0
+Mahindra,Mahindra Bolero Neo,9.97,4.6,1.0,17.0,100.0,110841.0
+Mahindra,Mahindra Bolero Neo Plus,11.41,4.6,,22.5,118.0,110841.0
+Mahindra,Mahindra XUV400,15.49,3.9,5.0,,,8237.0
+Mahindra,Mahindra Marazzo,14.59,4.3,4.0,17.0,121.0,718.0
+Tata,Tata Harrier EV,21.49,4.8,5.0,,225.0,
+Tata,Tata Altroz,6.89,4.7,5.0,,80.5,70162.0
+Tata,Tata Nexon,8.0,4.6,5.0,20.5,108.5,171697.0
+Tata,Tata Punch,6.2,4.4,5.0,22.0,79.5,170076.0
+Tata,Tata Harrier,15.0,4.7,5.0,15.0,168.0,24701.0
+Tata,Tata Tiago,5.0,4.4,4.0,23.5,78.5,85478.0
+Tata,Tata Curvv,10.0,4.6,5.0,22.5,119.5,
+Tata,Tata Safari,15.5,4.7,5.0,15.0,168.0,21944.0
+Tata,Tata Curvv EV,17.49,4.4,5.0,,225.0,
+Tata,Tata Nexon EV,12.49,4.4,5.0,,135.0,
+Tata,Tata Punch EV,9.99,4.4,5.0,22.5,120.0,
+Tata,Tata Tiago EV,7.99,4.5,4.0,22.5,73.0,
+Tata,Tata Tigor,6.0,4.5,4.0,23.5,78.5,26921.0
+Tata,Tata Tigor EV,12.49,3.6,4.0,,75.0,
+Tata,Tata Tiago NRG,7.2,4.7,4.0,23.0,78.5,
+Tata,Tata Harrier EV Stealth,27.05,4.8,5.0,22.5,210.0,
+Hyundai,Hyundai Creta,11.11,4.6,3.0,,135.5,162773.0
+Hyundai,Hyundai Exter,6.21,4.6,3.0,23.0,75.0,71301.0
+Hyundai,Hyundai Venue,7.94,4.6,3.0,20.0,100.0,128897.0
+Hyundai,Hyundai Grand i10 Nios,5.98,4.5,2.0,,75.0,70764.0
+Hyundai,Hyundai Verna,11.07,4.6,5.0,19.0,135.5,30027.0
+Hyundai,Hyundai i20,7.04,4.6,3.0,,84.5,69988.0
+Hyundai,Hyundai Aura,6.54,4.6,2.0,,75.0,55215.0
+Hyundai,Hyundai Alcazar,14.99,4.6,3.0,,136.0,20753.0
+Hyundai,Hyundai Tucson,29.27,3.9,5.0,,169.0,2883.0
+Hyundai,Hyundai Creta Electric,17.99,4.7,5.0,,154.0,
+Hyundai,Hyundai i20 N Line,9.99,4.6,3.0,,118.0,
+Hyundai,Hyundai Creta N Line,16.93,4.7,3.0,,158.0,
+Hyundai,Hyundai Ioniq 5,46.05,4.5,5.0,,217.0,1400.0
+Hyundai,Hyundai Venue N Line,12.15,4.8,3.0,18.0,118.0,
+Toyota,Toyota Urban Cruiser Hyryder,11.34,4.4,5.0,23.0,94.5,48916.0
+Toyota,Toyota Urban Cruiser Taisor,7.74,4.6,4.0,23.5,87.5,
+Toyota,Toyota Glanza,6.9,4.6,2.0,26.0,82.5,52262.0
+Toyota,Toyota Fortuner,36.05,4.5,5.0,12.0,182.5,35063.0
+Toyota,Toyota Innova Crysta,19.99,4.8,5.0,,148.0,98181.0
+Toyota,Toyota Innova Hycross,19.94,4.6,5.0,19.5,178.5,98181.0
+Toyota,Toyota Vellfire,122.0,4.8,5.0,19.0,142.0,400.0
+Toyota,Toyota Hilux,30.4,3.8,3.0,,201.0,2986.0
+Toyota,Toyota Camry,48.5,4.6,,25.0,184.0,2348.0
+Toyota,Toyota Fortuner Legender,44.51,4.8,5.0,14.0,201.0,35063.0
+Toyota,Toyota Rumion,10.54,4.8,,23.0,94.5,5973.0
+Toyota,Toyota Land Cruiser,231.0,4.8,,,304.0,
+Kia,Kia Seltos,11.19,4.7,3.0,18.5,135.5,100423.0
+Kia,Kia Sonet,8.0,4.4,,,100.0,81384.0
+Kia,Kia Carens Clavis,11.5,4.6,,17.0,135.5,
+Kia,Kia Carens,11.41,4.5,3.0,,135.5,63167.0
+Kia,Kia Syros,9.5,4.5,5.0,18.5,116.0,
+Kia,Kia Carnival,63.91,2.6,,14.0,190.0,
+Kia,Kia EV6,65.97,4.8,5.0,,,660.0
+Kia,Kia EV9,130.0,4.7,,,,
+BMW,BMW 3 Series LWB,62.0,4.9,,,221.5,3685.0
+BMW,BMW 5 Series,74.4,4.9,5.0,15.0,255.0,1242.0
+BMW,BMW X5,97.8,4.9,,12.0,328.5,2056.0
+BMW,BMW M5,199.0,4.9,,,717.0,
+BMW,BMW X1,50.8,4.5,5.0,18.0,141.0,3454.0
+BMW,BMW X3,75.8,4.8,5.0,15.0,191.0,
+BMW,BMW M340i,75.9,4.8,5.0,13.0,369.0,875.0
+BMW,BMW X7,131.0,4.7,,12.5,355.0,1570.0
+BMW,BMW M4,156.0,4.8,5.0,10.0,533.0,
+BMW,BMW 7 Series,184.0,4.8,,14.0,328.5,865.0
+BMW,BMW 2 Series Gran Coupe,44.4,4.6,5.0,16.0,182.5,
+BMW,BMW Z4,92.9,4.7,5.0,12.0,335.0,
+BMW,BMW M8,244.0,4.8,5.0,7.0,604.0,
+BMW,BMW M2,103.0,4.7,5.0,10.0,463.0,
+BMW,BMW iX1 LWB,49.0,4.7,5.0,,,
+BMW,BMW XM,260.0,4.7,5.0,61.0,563.5,
+BMW,BMW i4,72.5,4.6,5.0,,,
+BMW,BMW i7,204.99999999999997,4.8,5.0,,,384.0
+BMW,BMW iX1,66.9,4.3,5.0,10.5,,
+BMW,BMW X4 M40i,96.2,4.6,5.0,10.0,355.0,
+BMW,BMW iX,121.0,4.6,5.0,,,1189.0
+BMW,BMW i5,120.0,4.2,5.0,,601.0,
+Skoda,Skoda Kylaq,8.25,4.8,5.0,19.0,114.0,
+Skoda,Skoda Slavia,10.49,4.7,5.0,19.0,131.0,19092.0
+Skoda,Skoda Kushaq,10.99,4.4,5.0,18.5,131.0,23395.0
+Skoda,Skoda Kodiaq,46.89,4.8,,14.0,201.0,1887.0
+Mercedes-Benz,Mercedes-Benz A-Class Limousine,46.05,4.7,5.0,17.0,154.0,
+Mercedes-Benz,Mercedes-Benz G-Class,254.99999999999997,4.7,5.0,6.0,451.5,
+Mercedes-Benz,Mercedes-Benz GLC,76.8,4.7,5.0,,224.5,
+Mercedes-Benz,Mercedes-Benz GLA,50.8,4.8,5.0,,174.5,
+Mercedes-Benz,Mercedes-Benz C-Class,60.3,4.7,5.0,,226.0,
+Mercedes-Benz,Mercedes-Benz E-Class,79.5,4.8,5.0,,284.5,
+Mercedes-Benz,Mercedes-Benz GLS,134.0,4.3,5.0,,368.5,
+Mercedes-Benz,Mercedes-Benz Maybach S-Class,277.0,4.7,5.0,8.0,549.5,
+Mercedes-Benz,Mercedes-Benz GLE,101.0,4.8,5.0,,320.0,
+Mercedes-Benz,Mercedes-Benz S-Class,186.0,4.5,5.0,13.5,328.5,
+Mercedes-Benz,Mercedes-Benz Maybach GLS,339.0,4.6,5.0,,550.0,
+Mercedes-Benz,Mercedes-Benz AMG GLC43 Coupe,112.00000000000001,4.2,5.0,,416.0,
+Mercedes-Benz,Mercedes-Benz EQB,72.2,4.6,5.0,,,
+Mercedes-Benz,Mercedes-Benz CLE cabriolet,111.00000000000001,4.7,5.0,,255.0,
+Mercedes-Benz,Mercedes-Benz EQA,67.2,4.9,5.0,,,
+Mercedes-Benz,Mercedes-Benz EQS,130.0,4.6,5.0,,,
+Mercedes-Benz,Mercedes-Benz AMG G-Class,375.0,4.6,5.0,,577.0,
+Mercedes-Benz,Mercedes-Benz G580 with EQ technology,300.0,4.9,5.0,,,
+Mercedes-Benz,Mercedes-Benz Maybach SL 680,434.99999999999994,4.9,5.0,,577.0,
+Mercedes-Benz,Mercedes-Benz AMG GLA35,63.5,4.8,5.0,13.0,302.0,
+Mercedes-Benz,Mercedes-Benz AMG C 43,99.4,4.8,5.0,,402.0,
+Mercedes-Benz,Mercedes-Benz EQS SUV,131.0,4.8,5.0,,,
+Mercedes-Benz,Mercedes-Benz AMG SL55 Roadster,247.00000000000003,4.8,5.0,,469.0,
+Mercedes-Benz,Mercedes-Benz AMG A45 S,94.8,4.7,5.0,12.0,421.0,
+Mercedes-Benz,Mercedes-Benz AMG GT 63 S E Performance,330.0,4.4,5.0,,741.0,
+Mercedes-Benz,Mercedes-Benz AMG GLE Coupe,188.0,4.8,5.0,,429.0,
+Mercedes-Benz,Mercedes-Benz AMG E53 Cabriolet,130.0,4.8,5.0,,429.0,
+Mercedes-Benz,Mercedes-Benz Maybach EQS SUV,235.0,4.8,5.0,,,
+Mercedes-Benz,Mercedes-Benz EQE SUV,141.0,4.8,5.0,,,
+Mercedes-Benz,Mercedes-Benz AMG S 63 E Performance,330.0,4.8,5.0,,794.0,
+Mercedes-Benz,Mercedes-Benz AMG GT 63 S 4MATIC Plus,270.0,4.9,5.0,8.0,630.0,
+Mercedes-Benz,Mercedes-Benz AMG C 63 S E Performance,195.0,4.9,5.0,,469.0,
+Mercedes-Benz,Mercedes-Benz AMG EQS,245.00000000000003,4.9,5.0,,,
+Honda,Honda Elevate,11.95,4.6,,15.5,119.0,33642.0
+Honda,Honda City,12.42,4.6,5.0,17.5,119.0,16925.0
+Honda,Honda Amaze,8.14,4.7,,18.5,89.0,36017.0
+Honda,Honda Amaze 2nd Gen,7.66,4.3,4.0,21.0,88.5,
+Honda,Honda City Hybrid eHEV,20.89,4.6,,27.0,97.0,
+MG,MG Windsor EV,12.0,4.6,,,,
+MG,MG Hector,14.25,4.5,,,155.5,27435.0
+MG,MG Comet EV,6.17,4.4,,,,
+MG,MG ZS EV,15.5,4.1,5.0,,,6298.0
+MG,MG Astor,11.3,4.2,,,123.0,10569.0
+MG,MG Hector Plus,17.5,4.4,,16.0,154.5,
+MG,MG Gloster,41.07,4.2,5.0,12.5,185.5,2450.0
+Land Rover,Defender,105.0,4.8,5.0,23.0,461.0,1454.0
+Land Rover,Range Rover Velar,87.9,4.8,5.0,,224.0,756.0
+Land Rover,Range Rover Sport,145.0,4.8,5.0,11.0,486.0,
+Land Rover,Range Rover,240.0,4.7,,10.5,470.0,
+Land Rover,Range Rover Evoque,69.5,4.7,5.0,12.0,212.0,
+Land Rover,Discovery Sport,67.9,4.2,5.0,11.5,224.0,
+Land Rover,Discovery,134.0,4.7,5.0,10.5,296.0,
+Renault,Renault Triber,6.15,4.5,4.0,18.5,71.0,22446.0
+Renault,Renault Kwid,4.7,4.4,1.0,21.5,67.0,10168.0
+Renault,Renault Kiger,6.15,4.5,4.0,19.0,85.0,12825.0
+Citroen,Citroen C3,6.23,4.4,,18.5,94.5,4474.0
+Citroen,Citroen Basalt,8.32,4.6,4.0,18.5,94.0,
+Citroen,Citroen Aircross,8.62,4.6,,17.5,94.5,1832.0
+Citroen,Citroen eC3,12.84,4.4,,,71.0,2056.0
+Citroen,Citroen C5 Aircross,39.99,4.1,4.0,17.0,174.0,56.0
+Jeep,Jeep Compass,18.99,4.2,5.0,15.0,166.5,1768.0
+Jeep,Jeep Meridian,24.99,4.4,,15.0,168.0,1298.0
+Jeep,Jeep Wrangler,67.65,4.8,,10.5,268.0,345.0
+Jeep,Jeep Grand Cherokee,67.5,4.3,,,268.0,123.0
+Audi,Audi Q3,44.99,4.7,5.0,14.0,190.0,
+Audi,Audi A4,46.99,4.7,5.0,17.0,194.5,
+Audi,Audi A6,65.72,4.7,5.0,14.0,251.0,
+Audi,Audi Q7,88.7,4.5,5.0,,335.0,
+Audi,Audi Q5,66.99,4.7,5.0,13.0,261.0,
+Audi,Audi S5 Sportback,77.77,4.7,5.0,10.0,349.0,
+Audi,Audi Q8,117.0,4.7,5.0,,335.0,
+Audi,Audi e-tron GT,172.0,4.8,5.0,,,
+Audi,Audi Q3 Sportback,55.99,4.7,5.0,,193.0,
+Audi,Audi RS5,112.99999999999999,4.7,5.0,10.0,444.0,
+Audi,Audi RS Q8 Performance,249.00000000000003,4.7,5.0,,648.0,
+Audi,Audi A8 L,134.0,4.8,,,344.0,
+Audi,Audi Q8 Sportback e-tron,119.0,4.7,5.0,,,
+Audi,Audi Q8 e-tron,114.99999999999999,4.7,5.0,,,
+Audi,Audi e-tron Sportback,120.0,4.7,5.0,,,
+Audi,Audi e-tron,102.0,4.7,5.0,,,
+Nissan,Nissan Magnite,6.14,4.5,,18.0,85.0,30147.0
+Nissan,Nissan X-Trail,49.92,2.7,,13.0,161.0,
+BYD,BYD Atto 3,24.99,3.9,,,,3100.0
+BYD,BYD Seal,41.0,4.7,5.0,,,1300.0
+BYD,BYD Sealion 7,48.9,4.8,,,,
+BYD,BYD eMax 7,26.9,4.8,,,,
+Volvo,Volvo XC60,70.75,4.9,5.0,12.0,250.0,2200.0
+Volvo,Volvo EX40,50.1,4.8,5.0,,206.0,
+Volvo,Volvo XC90,104.0,4.3,,12.0,247.0,
+Volvo,Volvo EC40,59.0,4.3,5.0,,408.0,
+Porsche,Porsche 911,199.0,4.7,,9.0,510.5,156.0
+Porsche,Porsche Cayenne,142.0,4.6,5.0,24.5,442.5,454.0
+Porsche,Porsche Macan,96.05,4.7,5.0,10.5,337.5,259.0
+Porsche,Porsche Panamera,170.0,4.9,,,421.0,137.0
+Porsche,Porsche Taycan,167.0,4.8,,,421.0,137.0
+Porsche,Porsche Cayenne Coupe,149.0,4.5,5.0,24.5,483.0,454.0
+Porsche,Porsche Macan Turbo EV,122.0,4.7,5.0,,304.0,
+Lexus,Lexus ES,64.0,4.6,5.0,22.0,195.5,1400.0
+Lexus,Lexus LX,282.0,4.9,,6.0,304.0,
+Lexus,Lexus NX,68.02,4.4,5.0,17.0,188.0,
+Lexus,Lexus LM,210.0,4.7,,,190.0,
+Lexus,Lexus RX,99.99,4.7,5.0,,229.0,
+Lamborghini,Lamborghini Urus SE,457.0,4.8,,,789.0,60.0
+Lamborghini,Lamborghini Temerario,600.0,4.4,,,800.0,
+Lamborghini,Lamborghini Revuelto,889.0,4.7,,,814.0,62.0
+Jaguar,Jaguar F-Pace,72.9,4.7,5.0,15.5,372.0,
+Rolls-Royce,Rolls-Royce Phantom,950.0,4.8,,6.5,508.0,
+Rolls-Royce,Rolls-Royce Cullinan,695.0,4.8,,6.0,563.0,
+Rolls-Royce,Rolls-Royce Spectre,750.0,4.9,,,564.0,
+MINI,MINI Cooper,44.9,4.5,,,201.0,
+MINI,MINI Countryman,47.75,4.7,5.0,16.5,159.0,
+MINI,MINI Cooper SE,53.0,4.4,,,119.0,
+MINI,MINI Countryman Electric,54.9,4.4,5.0,,120.0,
+Ferrari,Ferrari Purosangue SUV,1050.0,4.6,5.0,,715.0,
+Ferrari,Ferrari 296 GTB,540.0,4.6,5.0,,645.0,
+Ferrari,Ferrari Roma,376.0,4.6,5.0,8.0,612.0,
+Ferrari,Ferrari F8 Tributo,401.99999999999994,4.8,5.0,7.0,711.0,
+Ferrari,Ferrari Portofino,350.0,4.8,5.0,8.0,591.0,
+Ferrari,Ferrari 296 GTS,624.0,4.6,5.0,,663.0,
+Force Motors,Force Motors Gurkha,16.75,4.5,3.0,,138.0,
+Force Motors,Force Motors Trax Cruiser,13.83,4.7,3.0,,90.0,
+Isuzu,Isuzu V-Cross,21.2,4.8,4.0,,161.0,
+Isuzu,Isuzu MU-X,35.0,4.6,4.0,,161.0,
+Maserati,Maserati Ghibli,120.0,4.7,5.0,12.0,428.0,
+Maserati,Maserati MC20,365.0,4.9,5.0,8.0,621.0,
+Maserati,Maserati Levante,145.0,4.5,5.0,9.5,350.5,
+Maserati,Maserati Quattroporte,180.0,4.4,5.0,11.0,423.5,
+Maserati,Maserati Grecale,131.0,4.4,5.0,,409.5,
+Maserati,Maserati GranTurismo,272.0,3.8,5.0,,512.5,
+Aston Martin,Aston Martin Vanquish,885.0,4.5,5.0,,835.0,
+Aston Martin,Aston Martin DB11,329.0,4.5,5.0,8.0,551.5,
+Aston Martin,Aston Martin Vantage,399.0,4.9,5.0,,656.0,
+Aston Martin,Aston Martin DBX,463.0,4.7,5.0,10.0,619.5,11.0
+Aston Martin,Aston Martin DB12,459.0,4.6,5.0,,670.0,
+Bentley,Bentley Bentayga,409.99999999999994,4.9,5.0,7.0,542.0,50.0
+McLaren,McLaren 750S,591.0,4.8,5.0,,740.0,20.0
+McLaren,McLaren 720S,465.00000000000006,4.8,5.0,8.0,711.0,18.0
+McLaren,McLaren GT,372.0,4.5,5.0,7.0,612.0,12.0
+Lotus,Lotus Eletre,254.99999999999997,4.5,5.0,,420.0,250.0
+Lotus,Lotus Emira,322.0,4.9,5.0,,360.0,40.0
+Lotus,Lotus Emeya,234.0,4.8,5.0,,400.0,10.0

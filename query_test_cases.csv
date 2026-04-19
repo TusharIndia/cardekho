@@ -1,0 +1,165 @@
+category,query,expected_budget_rupees,expected_family_size,expected_preference,expected_strict_budget,expected_is_car_related,notes
+budget-only,under 5 lakh,500000,, ,true,true,strict upper cap
+budget-only,is there any car lower than 4 lakh?,400000,, ,true,true,strict upper cap
+budget-only,show cars below ₹8 lakh,800000,, ,true,true,strict upper cap
+budget-only,my budget is 12 lakh,1200000,, ,false,true,normal cap with flex
+budget-only,budget 7.5 lakh,750000,, ,false,true,decimal lakh
+budget-only,around 9 lakh,900000,, ,false,true,approx budget
+budget-only,maximum 10 lakh,1000000,, ,true,true,strict upper cap
+budget-only,need car within 6 lakh,600000,, ,true,true,strict upper cap
+budget-only,under 800k,800000,, ,true,true,k notation
+budget-only,budget ₹950000,950000,, ,false,true,rupee symbol format
+budget-only,I can spend 1.2 crore,12000000,, ,false,true,crore budget
+budget-only,not more than 11 lakh,1100000,, ,true,true,strict upper cap
+family-only,car for family size of 7,,7,,false,true,should not force budget text in understood message
+family-only,need a car for family of 5,,5,,false,true,family phrase
+family-only,car for 6 people,,6,,false,true,people phrase
+family-only,large family car,,6,,false,true,keyword heuristic
+family-only,couple car,,2,,false,true,keyword heuristic
+family-only,single person use,,1,,false,true,keyword heuristic
+preference-only,need best safety car,,,safety,false,true,safety preference
+preference-only,I want high performance car,,,performance,false,true,performance preference
+preference-only,mileage should be great,,,efficiency,false,true,efficiency preference
+preference-only,fuel efficient car needed,,,efficiency,false,true,efficiency preference
+preference-only,cheap and affordable option,,,budget,false,true,budget preference
+combo,under 10 lakh for family of 5 with safety,1000000,5,safety,true,true,multi-intent strict
+combo,budget 12 lakh family of 4 performance,1200000,4,performance,false,true,multi-intent
+combo,below 8 lakh for 7 members safe car,800000,7,safety,true,true,multi-intent strict
+combo,need mileage car for family of 3 under 9 lakh,900000,3,efficiency,true,true,multi-intent strict
+combo,show affordable car for family of 2 budget 6 lakh,600000,2,budget,false,true,multi-intent
+combo,my family is 6 and budget is 15 lakh with good power,1500000,6,performance,false,true,multi-intent
+combo,need safe car around 11 lakh for family of 5,1100000,5,safety,false,true,multi-intent
+combo,within 7 lakh for couple with fuel efficiency,700000,2,efficiency,true,true,multi-intent strict
+combo,lower than 5 lakh for family 4 budget option,500000,4,budget,true,true,multi-intent strict
+combo,buy suv for family size of 7 under 14 lakh,1400000,7,,true,true,multi-intent strict without explicit preference keyword
+relative,I want something better than alto,,,,false,true,car-related without explicit budget
+relative,recommend me a sedan around city use,,,,false,true,no structured fields expected
+relative,best car for highway driving,,,,false,true,no structured fields expected
+relative,top rated car in this range,,,,false,true,no structured fields expected
+slang,4 lakh ke andar car chahiye,400000,,,true,true,hindi+english mix may need gemini; verify behavior
+slang,mujhe family ke liye safe car chahiye,, ,safety,false,true,hindi+english mix
+slang,budget 6l family 5,600000,5,,false,true,compact shorthand
+slang,need car under 3.5 lac,350000,,,true,true,lac spelling
+low-budget,need a car under 2 lakh,200000,,,true,true,should trigger minimum-budget response
+low-budget,below 3 lakh family of 4,300000,4,,true,true,likely below dataset minimum
+irrelevant,what is the weather today,,,,,false,should return irrelevant query message
+irrelevant,write me a python sorting code,,,,,false,should return irrelevant query message
+irrelevant,tell me a joke,,,,,false,should return irrelevant query message
+edge-empty,,,,,,,empty query test
+edge-noisy,!!! car ??? budget #### 5 lakh,500000,,,false,true,noisy input
+edge-no-units,my budget is 500000,500000,,,false,true,raw rupees integer
+edge-crore,under 0.9 crore,9000000,,,true,true,decimal crore
+edge-large,need car under 2500000 for family size 8 safety,2500000,8,safety,true,true,large family and strict budget
+luxury,show me a luxury car,,,,false,true,luxury intent without explicit budget
+luxury,need a premium luxury sedan under 80 lakh,8000000,,performance,true,true,strict premium search
+luxury,I want an executive car for business use,,,,false,true,premium positioning intent
+luxury,best luxury suv in India,,,,false,true,luxury and body type intent
+luxury,I want a premium feel car around 30 lakh,3000000,,,false,true,premium budget with comfort intent
+ratings,show cars with great user ratings,,,,false,true,user rating driven search
+ratings,I only want cars rated above 4.5 stars,,,,false,true,rating threshold intent
+ratings,best reviewed family car under 15 lakh,1500000,3,,true,true,rating plus strict budget
+ratings,top rated hatchback below 10 lakh,1000000,,,true,true,rating and body type strict
+ratings,highest customer satisfaction car in this range,,,,false,true,review quality intent
+horsepower,show me high horsepower cars,,,performance,false,true,power intent
+horsepower,need car with at least 150 bhp,,,,false,true,explicit bhp threshold intent
+horsepower,most powerful car under 25 lakh,2500000,,performance,true,true,power plus strict budget
+horsepower,performance suv below 20 lakh,2000000,,performance,true,true,power and body type strict
+horsepower,quick acceleration car for highway,,,,false,true,performance behavior intent
+brand,show only BMW cars,,,,false,true,brand-specific search
+brand,best Tata car under 12 lakh,1200000,,,true,true,brand plus strict budget
+brand,recommend a Mahindra suv for family of 7,,7,,false,true,brand plus large family
+brand,Toyota car with good mileage under 18 lakh,1800000,,efficiency,true,true,brand plus efficiency strict
+brand,Hyundai safe car for family of 5 under 15 lakh,1500000,5,safety,true,true,brand plus safety strict
+body-type,need a compact hatchback for city use,,,,false,true,body type and use case
+body-type,looking for a 7 seater suv under 20 lakh,2000000,7,,true,true,seating and body type strict
+body-type,best sedan around 14 lakh,1400000,,,false,true,body type with approximate budget
+body-type,recommend an mpv for big family,,6,,false,true,mpv for family intent
+body-type,off road suv with strong power,,,,false,true,off-road and performance intent
+transmission,automatic transmission car under 12 lakh,1200000,,,true,true,transmission preference strict
+transmission,manual gearbox sporty car,,,,false,true,manual plus performance intent
+transmission,best automatic family car for 5 people,,5,,false,true,transmission plus family intent
+fuel-type,diesel suv under 18 lakh,1800000,,,true,true,fuel type and body type strict
+fuel-type,petrol hatchback with mileage focus,,,efficiency,false,true,fuel plus efficiency intent
+fuel-type,cng car for daily commute under 9 lakh,900000,,,true,true,cng and strict budget
+electric,show me electric cars under 25 lakh,2500000,,,true,true,ev strict budget intent
+electric,best ev for city driving,,,,false,true,electric use-case intent
+electric,electric suv with good range,,,,false,true,ev plus range intent
+feature-based,car with sunroof and good safety,,,safety,false,true,feature plus safety intent
+feature-based,need adas enabled car under 30 lakh,3000000,,,true,true,advanced feature strict budget
+feature-based,car with 6 airbags for family of 5,,5,safety,false,true,safety feature and family
+feature-based,best infotainment and comfort car,,,,false,true,feature and comfort intent
+feature-based,rear camera and parking sensors car under 10 lakh,1000000,,,true,true,parking feature strict budget
+mixed-advanced,luxury suv under 60 lakh with strong power,6000000,,performance,true,true,multi-intent luxury and performance strict
+mixed-advanced,top rated safe car for family of 7 under 25 lakh,2500000,7,safety,true,true,multi-intent safety family strict
+mixed-advanced,fuel efficient automatic car below 14 lakh,1400000,,efficiency,true,true,multi-intent efficiency transmission strict
+mixed-advanced,premium sedan with high user rating around 40 lakh,4000000,,,false,true,multi-intent premium ratings
+mixed-advanced,budget performance car under 11 lakh,1100000,,performance,true,true,budget plus performance strict
+follow-up,what about something cheaper than this,,,,false,true,follow-up conversational query
+follow-up,show me another option with better mileage,,,efficiency,false,true,follow-up optimization query
+follow-up,can you suggest same budget but safer option,,,safety,false,true,follow-up safety query
+follow-up,now for family size 7 instead,,7,,false,true,follow-up family override
+follow-up,keep budget same and show premium option,,,,false,true,context dependent premium follow-up
+robustness,budget 10l need suv,1000000,,,false,true,shorthand lakh format with body type
+robustness,budget 12 lac family 6 safety,1200000,6,safety,false,true,common lac shorthand
+robustness,need car 15l for 5 members mileage,1500000,5,efficiency,false,true,compact shorthand pattern
+robustness,my budget around 700000 and i need safe car,700000,,safety,false,true,raw rupees with safety
+robustness,can spend rs 850000 for family of 4,850000,4,,false,true,rs format and family
+robustness,price 9 lakh good mileage please,900000,,efficiency,false,true,price wording with efficiency
+robustness,need best ev under 20 lakh,2000000,,,true,true,ev strict budget case
+robustness,electric car for family of 5 under 22 lakh,2200000,5,,true,true,ev with family strict
+robustness,diesel car below 11 lakh,1100000,,,true,true,fuel type strict budget
+robustness,cng hatchback under 8 lakh,800000,,,true,true,fuel plus body type strict
+robustness,automatic safe suv around 18 lakh,1800000,,safety,false,true,transmission safety combo
+robustness,manual performance car 14 lakh,1400000,,performance,false,true,manual plus performance
+robustness,show me car less than 13.5 lakh,1350000,,,true,true,decimal strict budget
+robustness,upto 6 lakh best option,600000,,,true,true,upto strict phrase
+robustness,within 7.2 lakh family 3,720000,3,,true,true,within strict phrase with decimal
+robustness,not more than 950000 budget family 5,950000,5,,true,true,strict raw rupees case
+robustness,family is 6 budget is 17 lakh,1700000,6,,false,true,family is phrase coverage
+robustness,for 7 seater under 19 lakh,1900000,7,,true,true,seater should map family size
+robustness,need 8 seater car under 25 lakh,2500000,8,,true,true,larger seater strict query
+robustness,safe car with 6 airbags under 16 lakh,1600000,,safety,true,true,airbags should map safety
+robustness,adas car below 30 lakh,3000000,,safety,true,true,adas intent to safety
+robustness,high bhp car under 35 lakh,3500000,,performance,true,true,bhp intent performance
+robustness,horsepower focus car 28 lakh,2800000,,performance,false,true,horsepower keyword performance
+robustness,i need something cheaper, , ,budget,false,true,follow-up budget intent no explicit car word
+robustness,better mileage than current option,,,efficiency,false,true,follow-up efficiency intent
+robustness,same budget but safer,,,safety,false,true,follow-up safety intent
+robustness,give me another option,,, ,false,true,neutral follow-up should still be car related
+robustness,alto alternative under 9 lakh,900000,,,true,true,model reference with strict budget
+robustness,bmw under 70 lakh,7000000,,,true,true,brand reference strict budget
+robustness,maruti safe family car 10 lakh,1000000,,safety,false,true,brand plus safety plus budget
+robustness,toyota mileage car around 20 lakh,2000000,,efficiency,false,true,brand plus efficiency
+robustness,mahindra for family size 7 with safety,,7,safety,false,true,brand family preference
+robustness,is there any vehicle under 5 lakh,500000,,,true,true,vehicle synonym strict budget
+robustness,what is good car for city traffic,,,,false,true,open use case should be car related
+robustness,best car for daily commute under 12 lakh,1200000,,,true,true,commute strict budget
+robustness,family car for highway and safety around 18 lakh,1800000,,safety,false,true,use case plus safety
+robustness,luxury feeling car 45 lakh,4500000,,performance,false,true,luxury should bias performance bucket
+robustness,premium sedan below 50 lakh,5000000,,performance,true,true,premium strict case
+robustness,budget friendly car for college student,,,budget,false,true,budget-intent no amount
+robustness,affordable automatic hatchback,,,budget,false,true,affordable should map budget
+robustness,mujhe 10 lakh ke andar family car chahiye,1000000,,,true,true,hinglish strict budget intent
+robustness,mileage wali car under 9 lakh,900000,,efficiency,true,true,hinglish efficiency strict
+robustness,safe suv chahiye family of 6 under 20 lakh,2000000,6,safety,true,true,mixed hinglish strict
+robustness,budget 11l performance chahiye,1100000,,performance,false,true,hinglish performance shorthand
+robustness,car for 2 ppl under 7 lakh,700000,,,true,true,abbreviation ppl in family context
+robustness,need car under 0.75 crore,7500000,,,true,true,crore decimal strict
+robustness,budget is 1500000 and preference is mileage,1500000,,efficiency,false,true,explicit preference phrase
+robustness,show top rated ev around 30 lakh,3000000,,,false,true,rating plus ev around budget
+robustness,weather in delhi today,,,,,false,explicit irrelevant non-car query
+robustness,write sql query to join tables,,,,,false,explicit coding irrelevant query
+robustness,tell me best laptop under 1 lakh,100000,,,true,false,budget mention but non-car domain
+robustness,need car undr 8 lakh,800000,,,true,true,typo in strict keyword
+robustness,buget 9 lakh family of 4,900000,4,,false,true,typo in budget keyword
+robustness,affordble car under 6 lakh,600000,,,true,true,typo in affordable keyword
+robustness,need safest car around 13 lakh,1300000,,safety,false,true,superlative safety wording
+robustness,show powerful suv 24 lakh,2400000,,performance,false,true,implicit performance wording
+robustness,best kmpl car in 10 lakh,1000000,,efficiency,false,true,kmpl efficiency phrasing
+robustness,i can pay 18lac for family of 6,1800000,6,,false,true,lac shorthand without space
+robustness,show me evs below 18 lakh,1800000,,,true,true,plural ev keyword strict
+robustness,recommend maruti alto options,,,,false,true,brand plus model mention
+robustness,need safer than current option,,,safety,false,true,follow-up comparative safety
+robustness,give another cheaper one,,,budget,false,true,follow-up budget comparative
+robustness,tell me a joke about cars,,,,false,true,joke with explicit car context should be car-related
+robustness,tell me a joke,,,,,false,pure joke should be irrelevant

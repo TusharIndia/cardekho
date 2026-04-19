@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Recommendation Chatbot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .chat-area {
+            flex: 1;
+            overflow-y: auto;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background: #f9f9f9;
+        }
+
+        .message {
+            display: flex;
+            gap: 12px;
+            Animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .bot-message {
+            justify-content: flex-start;
+        }
+
+        .user-message {
+            justify-content: flex-end;
+        }
+
+        .message-bubble {
+            max-width: 70%;
+            padding: 12px 16px;
+            border-radius: 8px;
+            word-wrap: break-word;
+            line-height: 1.5;
+        }
+
+        .bot-message .message-bubble {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+
+        .user-message .message-bubble {
+            background: #667eea;
+            color: white;
+        }
+
+        .recommendations-table {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 15px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        th {
+            background: #667eea;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        tr:hover {
+            background: #f5f5f5;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .price {
+            color: #2e7d32;
+            font-weight: 600;
+        }
+
+        .input-area {
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 12px;
+            flex: 1;
+            min-width: 250px;
+            align-items: flex-end;
+        }
+
+        .form-field {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        input, select {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 13px;
+            font-family: inherit;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 8px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 13px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .loading {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #1976d2;
+            font-size: 13px;
+        }
+
+        .spinner {
+            width: 16px;
+            height: 16px;
+            border: 2px solid #e0e0e0;
+            border-top-color: #667eea;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .error {
+            background: #ffebee;
+            color: #c62828;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .summary {
+            background: #f1f8e9;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border-left: 4px solid #7cb342;
+            margin: 10px 0;
+            font-size: 13px;
+            color: #558b2f;
+            line-height: 1.6;
+        }
+
+        .reason {
+            background: #e0f2f1;
+            padding: 10px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #00695c;
+            margin: 8px 0;
+        }
+
+        .fallback-suggestion {
+            background: #fff9c4;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #fbc02d;
+            margin: 10px 0;
+            font-size: 13px;
+            color: #f57f17;
+            line-height: 1.6;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 13px;
+            font-family: inherit;
+            resize: vertical;
+            min-height: 60px;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .query-input-section {
+            width: 100%;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            align-items: flex-end;
+        }
+
+        .car-suggestion {
+            background: #f0f7ff;
+            padding: 10px 12px;
+            border-radius: 4px;
+            margin-top: 8px;
+            font-size: 12px;
+            color: #1565c0;
+            font-style: italic;
+            border-left: 3px solid #667eea;
+        }
+
+        .send-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            flex-shrink: 0;
+            margin-left: auto;
+        }
+
+        .send-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .send-btn:active {
+            transform: scale(0.95);
+        }
+
+        .send-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .query-input-section {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .query-input-container {
+            display: flex;
+            gap: 8px;
+            align-items: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚗 Car Recommendation Chatbot</h1>
+            <p>Tell us what you need, and we'll find the perfect car for you!</p>
+        </div>
+
+        <div class="chat-area" id="chatArea">
+            <div class="message bot-message">
+                <div class="message-bubble">
+                    👋 Hi! I'm your car recommendation assistant. To help you find the best car, please tell me:
+                    <ul style="margin: 8px 0 0 20px;">
+                        <li>Your budget in rupees</li>
+                        <li>Family size (number of people)</li>
+                        <li>What matters most (budget, performance, safety, efficiency)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <div class="query-input-section">
+                <label for="query"><strong>📝 Tell me what you need in a car:</strong></label>
+                <small style="color: #666;">Press Enter to search (Shift+Enter for new line)</small>
+                <div class="query-input-container">
+                    <textarea id="query" placeholder="E.g., family car with ₹15 lakh budget, good safety"></textarea>
+                    <button id="sendBtn" title="Send (Enter)" class="send-btn">➤</button>
+                </div>
+            </div>
+            
+            <!-- Hidden default filter values used internally for irrelevant queries -->
+            <input type="hidden" id="budget" value="1000000">
+            <select id="family_size" style="display: none;">
+                <option value="1">1-2 people</option>
+                <option value="3" selected>3-5 people</option>
+                <option value="7">5+ people</option>
+            </select>
+            <select id="preference" style="display: none;">
+                <option value="budget">Budget-friendly</option>
+                <option value="performance">Performance</option>
+                <option value="safety" selected>Safety</option>
+                <option value="efficiency">Fuel Efficiency</option>
+            </select>
+        </div>
+    </div>
+
+    <script>
+        const chatArea = document.getElementById('chatArea');
+        const sendBtn = document.getElementById('sendBtn');
+        const queryInput = document.getElementById('query');
+
+        function handleQueryKeydown(event) {
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault();
+                getRecommendations();
+            }
+        }
+
+        function scrollToBottom() {
+            chatArea.scrollTop = chatArea.scrollHeight;
+        }
+
+        function addMessage(text, isBot = true, isHtml = false) {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = `message ${isBot ? 'bot-message' : 'user-message'}`;
+
+            const bubble = document.createElement('div');
+            bubble.className = 'message-bubble';
+
+            if (isHtml) {
+                bubble.innerHTML = text;
+            } else {
+                bubble.textContent = text;
+            }
+
+            msgDiv.appendChild(bubble);
+            chatArea.appendChild(msgDiv);
+            scrollToBottom();
+        }
+
+        async function streamMessage(text, isBot = true) {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = `message ${isBot ? 'bot-message' : 'user-message'}`;
+
+            const bubble = document.createElement('div');
+            bubble.className = 'message-bubble';
+
+            msgDiv.appendChild(bubble);
+            chatArea.appendChild(msgDiv);
+
+            let displayText = '';
+            for (let char of text) {
+                displayText += char;
+                bubble.textContent = displayText;
+                scrollToBottom();
+                await new Promise(resolve => setTimeout(resolve, 15)); // 15ms per character
+            }
+        }
+
+        async function getRecommendations() {
+            const query = document.getElementById('query').value.trim();
+            const budget = document.getElementById('budget').value || '1000000';
+            const family_size = document.getElementById('family_size').value;
+            const preference = document.getElementById('preference').value;
+
+            if (!query && !budget) {
+                await streamMessage('Please enter a query or budget to get started.', true);
+                return;
+            }
+
+            if (query) {
+                addMessage(query, false);
+            } else {
+                addMessage(`Looking for: Budget ₹${parseInt(budget).toLocaleString()}, family of ${family_size}, ${preference} preference`, false);
+            }
+
+            await streamMessage('🔍 Finding the perfect car for you...');
+            sendBtn.disabled = true;
+
+            try {
+                const response = await fetch('/recommend', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        query: query,
+                        budget: parseInt(budget),
+                        family_size: parseInt(family_size),
+                        preference: preference
+                    })
+                });
+
+                const data = await response.json();
+
+                // Handle irrelevant query
+                if (data.irrelevant_query) {
+                    await streamMessage(`❌ ${data.error}`);
+                    await streamMessage(data.fallback_message);
+                    await streamMessage(`Let me show you some great options anyway...`);
+                    
+                    // Show default recommendations with standard budget
+                    const defaultRecs = await fetch('/recommend', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            query: '',
+                            budget: 800000,
+                            family_size: 3,
+                            preference: 'balanced'
+                        })
+                    }).then(r => r.json());
+                    
+                    if (defaultRecs.success) {
+                        displayRecommendations(defaultRecs);
+                    }
+                    sendBtn.disabled = false;
+                    return;
+                }
+
+                // Handle budget too low
+                if (data.budget_too_low) {
+                    await streamMessage(data.min_budget_message);
+                    const car = data.min_budget_car;
+                    let minCarHtml = '<div class="recommendations-table"><table>';
+                    minCarHtml += '<tr><th>Make</th><th>Model</th><th>Price (₹)</th><th>Mileage</th><th>Power</th><th>Safety</th><th>User Rating</th></tr>';
+                    minCarHtml += `<tr>
+                        <td>${car.make}</td>
+                        <td>${car.model}</td>
+                        <td class="price">${car.price_display}</td>
+                        <td>${car.mileage} kmpl</td>
+                        <td>${car.power} bhp</td>
+                        <td>⭐${car.safety_rating}</td>
+                        <td>⭐${car.user_rating}</td>
+                    </tr>`;
+                    minCarHtml += '</table></div>';
+                    addMessage(minCarHtml, true, true);
+                    await streamMessage(`This is the most affordable option we have. It's a great reliable vehicle! Would you like to explore other options?`);
+                    sendBtn.disabled = false;
+                    return;
+                }
+
+                // Handle no matches with fallback
+                if (!response.ok || !data.success) {
+                    if (data.user_message) {
+                        await streamMessage(data.user_message);
+                    }
+                    
+                    if (data.fallback_suggestion) {
+                        await streamMessage(`💡 ${data.fallback_suggestion}`);
+                    } else {
+                        await streamMessage(`⚠️ ${data.error}`);
+                    }
+                    sendBtn.disabled = false;
+                    return;
+                }
+
+                // Display successful recommendations
+                await displayRecommendations(data);
+
+            } catch (error) {
+                await streamMessage(`❌ Error: ${error.message}`);
+            } finally {
+                sendBtn.disabled = false;
+            }
+        }
+
+        async function displayRecommendations(data) {
+            // Show user message if query was parsed
+            if (data.user_message) {
+                await streamMessage(data.user_message);
+            }
+
+            // Build and display table
+            let tableHtml = '<div class="recommendations-table"><table>';
+            tableHtml += '<tr><th>Make</th><th>Model</th><th>Price (₹)</th><th>Mileage</th><th>Power</th><th>Safety</th><th>User Rating</th></tr>';
+
+            data.recommendations.forEach(car => {
+                tableHtml += `<tr>
+                    <td>${car.make}</td>
+                    <td>${car.model}</td>
+                    <td class="price">${car.price.toLocaleString()}</td>
+                    <td>${car.mileage} kmpl</td>
+                    <td>${car.power} bhp</td>
+                    <td>⭐${car.safety_rating}</td>
+                    <td>⭐${car.user_rating}</td>
+                </tr>`;
+            });
+
+            tableHtml += '</table></div>';
+            addMessage(tableHtml, true, true);
+
+            // One plain paragraph recommendation below table
+            const bestCar = data.recommendations[0];
+            let recommendationParagraph = `Best overall option for you is ${bestCar.make} ${bestCar.model}. `;
+            if (bestCar.suggestion) {
+                recommendationParagraph += `${bestCar.suggestion} `;
+            }
+            if (data.gemini_summary) {
+                recommendationParagraph += data.gemini_summary;
+            } else {
+                recommendationParagraph += `This option gives a strong balance of price, mileage, safety, and user rating for your needs.`;
+            }
+            await streamMessage(recommendationParagraph.trim());
+
+            await streamMessage(`Found ${data.count} excellent option${data.count > 1 ? 's' : ''} for you! 🎉`);
+            
+            // Clear query input for next search
+            document.getElementById('query').value = '';
+        }
+
+        // Event listeners
+        sendBtn.addEventListener('click', getRecommendations);
+        
+        // Allow Enter key in budget input
+        document.getElementById('budget').addEventListener('keypress', e => {
+            if (e.key === 'Enter') getRecommendations();
+        });
+        
+        // Enter in query textarea to submit (Shift+Enter for newline)
+        if (queryInput) {
+            queryInput.addEventListener('keydown', handleQueryKeydown);
+        }
+    </script>
+</body>
+</html>

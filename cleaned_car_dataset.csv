@@ -1,0 +1,232 @@
+make,model,variant,price,mileage,power,safety_rating,user_rating
+BMW,BMW XM,standard,26000000,61.0,563.5,5.0,4.7
+Mercedes-Benz,Mercedes-Benz AMG S 63 E Performance,standard,33000000,17.0,794.0,5.0,4.8
+BMW,BMW M5,standard,19900000,17.0,717.0,5.0,4.9
+Aston Martin,Aston Martin Vantage,standard,39900000,17.0,656.0,5.0,4.9
+Mercedes-Benz,Mercedes-Benz AMG GT 63 S E Performance,standard,33000000,17.0,741.0,5.0,4.4
+Audi,Audi RS Q8 Performance,standard,24900000,17.0,648.0,5.0,4.7
+Mercedes-Benz,Mercedes-Benz AMG GT 63 S 4MATIC Plus,standard,27000000,8.0,630.0,5.0,4.9
+Maserati,Maserati MC20,standard,36500000,8.0,621.0,5.0,4.9
+Mercedes-Benz,Mercedes-Benz AMG G-Class,standard,37500000,17.0,577.0,5.0,4.6
+Mercedes-Benz,Mercedes-Benz Maybach GLS,standard,33900000,17.0,550.0,5.0,4.6
+BMW,BMW M8,standard,24400000,7.0,604.0,5.0,4.8
+Ferrari,Ferrari Portofino,standard,35000000,8.0,591.0,5.0,4.8
+Mercedes-Benz,Mercedes-Benz AMG C 63 S E Performance,standard,19500000,17.0,469.0,5.0,4.9
+Ferrari,Ferrari Roma,standard,37600000,8.0,612.0,5.0,4.6
+BMW,BMW i5,standard,12000000,17.0,601.0,5.0,4.2
+Mercedes-Benz,Mercedes-Benz AMG SL55 Roadster,standard,24700000,17.0,469.0,5.0,4.8
+BMW,BMW M4,standard,15600000,10.0,533.0,5.0,4.8
+Mercedes-Benz,Mercedes-Benz Maybach S-Class,standard,27700000,8.0,549.5,5.0,4.7
+Mercedes-Benz,Mercedes-Benz AMG GLE Coupe,standard,18800000,17.0,429.0,5.0,4.8
+Mercedes-Benz,Mercedes-Benz AMG E53 Cabriolet,standard,13000000,17.0,429.0,5.0,4.8
+Land Rover,Range Rover Sport,standard,14500000,11.0,486.0,5.0,4.8
+Land Rover,Defender,standard,10500000,23.0,461.0,5.0,4.8
+Mercedes-Benz,Mercedes-Benz AMG C 43,standard,9940000,17.0,402.0,5.0,4.8
+Aston Martin,Aston Martin DB11,standard,32900000,8.0,551.5,5.0,4.5
+Land Rover,Range Rover,standard,24000000,10.5,470.0,5.0,4.7
+BMW,BMW M2,standard,10300000,10.0,463.0,5.0,4.7
+Maserati,Maserati Ghibli,standard,12000000,12.0,428.0,5.0,4.7
+Audi,Audi RS5,standard,11300000,10.0,444.0,5.0,4.7
+Mercedes-Benz,Mercedes-Benz AMG A45 S,standard,9480000,12.0,421.0,5.0,4.7
+Porsche,Porsche Cayenne Coupe,standard,14900000,24.5,483.0,5.0,4.5
+Audi,Audi A8 L,standard,13400000,17.0,344.0,5.0,4.8
+Jaguar,Jaguar F-Pace,standard,7290000,15.5,372.0,5.0,4.7
+Maserati,Maserati Grecale,standard,13100000,17.0,409.5,5.0,4.4
+Porsche,Porsche Cayenne,standard,14200000,24.5,442.5,5.0,4.6
+Mercedes-Benz,Mercedes-Benz G-Class,standard,25500000,6.0,451.5,5.0,4.7
+Mercedes-Benz,Mercedes-Benz GLE,standard,10100000,17.0,320.0,5.0,4.8
+Audi,Audi Q8,standard,11700000,17.0,335.0,5.0,4.7
+Maserati,Maserati GranTurismo,standard,27200000,17.0,512.5,5.0,3.8
+Volvo,Volvo EC40,standard,5900000,17.0,408.0,5.0,4.3
+Toyota,Toyota Land Cruiser,standard,23100000,17.0,304.0,5.0,4.8
+Mercedes-Benz,Mercedes-Benz AMG GLC43 Coupe,standard,11200000,17.0,416.0,5.0,4.2
+Mercedes-Benz,Mercedes-Benz E-Class,standard,7950000,17.0,284.5,5.0,4.8
+Porsche,Porsche Macan Turbo EV,standard,12200000,17.0,304.0,5.0,4.7
+Maserati,Maserati Quattroporte,standard,18000000,11.0,423.5,5.0,4.4
+Audi,Audi Q7,standard,8870000,17.0,335.0,5.0,4.5
+Maruti Suzuki,Maruti Dzire,standard,684000,28.5,74.5,5.0,4.7
+Mercedes-Benz,Mercedes-Benz GLS,standard,13400000,17.0,368.5,5.0,4.3
+BMW,BMW Z4,standard,9290000,12.0,335.0,5.0,4.7
+Tata,Tata Harrier EV Stealth,standard,2705000,22.5,210.0,5.0,4.8
+Mercedes-Benz,Mercedes-Benz AMG GLA35,standard,6350000,13.0,302.0,5.0,4.8
+Audi,Audi S5 Sportback,standard,7777000,10.0,349.0,5.0,4.7
+Toyota,Toyota Innova Hycross,standard,1994000,19.5,178.5,5.0,4.6
+BMW,BMW X4 M40i,standard,9620000,10.0,355.0,5.0,4.6
+Mahindra,Mahindra Scorpio N,standard,1399000,17.0,165.0,5.0,4.7
+Porsche,Porsche Panamera,standard,17000000,17.0,421.0,5.0,4.9
+Mercedes-Benz,Mercedes-Benz CLE cabriolet,standard,11100000,17.0,255.0,5.0,4.7
+Mercedes-Benz,Mercedes-Benz S-Class,standard,18600000,13.5,328.5,5.0,4.5
+Toyota,Toyota Innova Crysta,standard,1999000,17.0,148.0,5.0,4.8
+Tata,Tata Harrier EV,standard,2149000,17.0,225.0,5.0,4.8
+Mahindra,Mahindra Bolero Neo Plus,standard,1141000,22.5,118.0,5.0,4.6
+Porsche,Porsche Taycan,standard,16700000,17.0,421.0,5.0,4.8
+Maserati,Maserati Levante,standard,14500000,9.5,350.5,5.0,4.5
+Lexus,Lexus LX,standard,28200000,6.0,304.0,5.0,4.9
+Mercedes-Benz,Mercedes-Benz EQA,standard,6720000,17.0,193.8,5.0,4.9
+Mercedes-Benz,Mercedes-Benz G580 with EQ technology,standard,30000000,17.0,193.8,5.0,4.9
+Mercedes-Benz,Mercedes-Benz AMG EQS,standard,24500000,17.0,193.8,5.0,4.9
+Porsche,Porsche 911,standard,19900000,9.0,510.5,5.0,4.7
+BMW,BMW X5,standard,9780000,12.0,328.5,5.0,4.9
+Land Rover,Discovery,standard,13400000,10.5,296.0,5.0,4.7
+Tata,Tata Nexon,standard,800000,20.5,108.5,5.0,4.6
+Lexus,Lexus RX,standard,9999000,17.0,229.0,5.0,4.7
+Toyota,Toyota Fortuner Legender,standard,4451000,14.0,201.0,5.0,4.8
+Mahindra,Mahindra XUV700,standard,1449000,17.0,175.0,5.0,4.6
+BMW,BMW M340i,standard,7590000,13.0,369.0,5.0,4.8
+Volvo,Volvo EX40,standard,5010000,17.0,206.0,5.0,4.8
+Mercedes-Benz,Mercedes-Benz C-Class,standard,6030000,17.0,226.0,5.0,4.7
+Mercedes-Benz,Mercedes-Benz GLC,standard,7680000,17.0,224.5,5.0,4.7
+Audi,Audi A6,standard,6572000,14.0,251.0,5.0,4.7
+Audi,Audi Q5,standard,6699000,13.0,261.0,5.0,4.7
+Mercedes-Benz,Mercedes-Benz EQS SUV,standard,13100000,17.0,193.8,5.0,4.8
+Mercedes-Benz,Mercedes-Benz Maybach EQS SUV,standard,23500000,17.0,193.8,5.0,4.8
+Mercedes-Benz,Mercedes-Benz EQE SUV,standard,14100000,17.0,193.8,5.0,4.8
+BYD,BYD Sealion 7,standard,4890000,17.0,193.8,5.0,4.8
+BYD,BYD eMax 7,standard,2690000,17.0,193.8,5.0,4.8
+Audi,Audi e-tron GT,standard,17200000,17.0,193.8,5.0,4.8
+BMW,BMW X7,standard,13100000,12.5,355.0,5.0,4.7
+Maruti Suzuki,Maruti Grand Vitara,standard,1142000,23.0,94.5,5.0,4.5
+Lotus,Lotus Eletre,standard,25500000,17.0,420.0,5.0,4.5
+BMW,BMW 3 Series LWB,standard,6200000,17.0,221.5,5.0,4.9
+BMW,BMW 7 Series,standard,18400000,14.0,328.5,5.0,4.8
+Audi,Audi A4,standard,4699000,17.0,194.5,5.0,4.7
+Mercedes-Benz,Mercedes-Benz GLA,standard,5080000,17.0,174.5,5.0,4.8
+Kia,Kia EV9,standard,13000000,17.0,193.8,5.0,4.7
+Mahindra,Mahindra BE 6,standard,1890000,17.0,193.8,5.0,4.7
+Mahindra,Mahindra XEV 9e,standard,2190000,17.0,193.8,5.0,4.7
+Audi,Audi Q8 Sportback e-tron,standard,11900000,17.0,193.8,5.0,4.7
+Audi,Audi e-tron Sportback,standard,12000000,17.0,193.8,5.0,4.7
+Audi,Audi e-tron,standard,10200000,17.0,193.8,5.0,4.7
+Audi,Audi Q8 e-tron,standard,11500000,17.0,193.8,5.0,4.7
+BMW,BMW iX1 LWB,standard,4900000,17.0,193.8,5.0,4.7
+Audi,Audi Q3 Sportback,standard,5599000,17.0,193.0,5.0,4.7
+BMW,BMW X3,standard,7580000,15.0,191.0,5.0,4.8
+Lexus,Lexus LM,standard,21000000,17.0,190.0,5.0,4.7
+Honda,Honda City Hybrid eHEV,standard,2089000,27.0,97.0,5.0,4.6
+Mahindra,Mahindra XUV 3XO,standard,799000,19.0,119.5,5.0,4.6
+Tata,Tata Punch,standard,620000,22.0,79.5,5.0,4.4
+MG,MG Windsor EV,standard,1200000,17.0,193.8,5.0,4.6
+Mercedes-Benz,Mercedes-Benz EQS,standard,13000000,17.0,193.8,5.0,4.6
+Mercedes-Benz,Mercedes-Benz EQB,standard,7220000,17.0,193.8,5.0,4.6
+BMW,BMW i4,standard,7250000,17.0,193.8,5.0,4.6
+Tata,Tata Harrier,standard,1500000,15.0,168.0,5.0,4.7
+BMW,BMW 5 Series,standard,7440000,15.0,255.0,5.0,4.9
+McLaren,McLaren GT,standard,37200000,7.0,612.0,5.0,4.5
+Hyundai,Hyundai Verna,standard,1107000,19.0,135.5,5.0,4.6
+Tata,Tata Curvv EV,standard,1749000,17.0,225.0,5.0,4.4
+Tata,Tata Safari,standard,1550000,15.0,168.0,5.0,4.7
+Toyota,Toyota Camry,standard,4850000,25.0,184.0,5.0,4.6
+Land Rover,Range Rover Evoque,standard,6950000,12.0,212.0,5.0,4.7
+Skoda,Skoda Slavia,standard,1049000,19.0,131.0,5.0,4.7
+MINI,MINI Cooper,standard,4490000,17.0,201.0,5.0,4.5
+Audi,Audi Q3,standard,4499000,14.0,190.0,5.0,4.7
+Volvo,Volvo XC60,standard,7075000,12.0,250.0,5.0,4.9
+Tata,Tata Curvv,standard,1000000,22.5,119.5,5.0,4.6
+MINI,MINI Countryman,standard,4775000,16.5,159.0,5.0,4.7
+Skoda,Skoda Kylaq,standard,825000,19.0,114.0,5.0,4.8
+Hyundai,Hyundai Creta Electric,standard,1799000,17.0,154.0,5.0,4.7
+Mercedes-Benz,Mercedes-Benz A-Class Limousine,standard,4605000,17.0,154.0,5.0,4.7
+BMW,BMW 2 Series Gran Coupe,standard,4440000,16.0,182.5,5.0,4.6
+Tata,Tata Altroz,standard,689000,17.0,80.5,5.0,4.7
+Toyota,Toyota Urban Cruiser Hyryder,standard,1134000,23.0,94.5,5.0,4.4
+Lotus,Lotus Emira,standard,32200000,17.0,360.0,5.0,4.9
+Honda,Honda Amaze,standard,814000,18.5,89.0,5.0,4.7
+MG,MG Hector,standard,1425000,17.0,155.5,5.0,4.5
+Maruti Suzuki,Maruti Invicto,standard,2551000,23.0,150.0,5.0,4.6
+Toyota,Toyota Rumion,standard,1054000,23.0,94.5,5.0,4.8
+MG,MG Comet EV,standard,617000,17.0,193.8,5.0,4.4
+Toyota,Toyota Fortuner,standard,3605000,12.0,182.5,5.0,4.5
+Lexus,Lexus NX,standard,6802000,17.0,188.0,5.0,4.4
+Mahindra,Mahindra Thar Roxx,standard,1299000,13.5,162.0,5.0,4.7
+Lexus,Lexus ES,standard,6400000,22.0,195.5,5.0,4.6
+Honda,Honda Elevate,standard,1195000,15.5,119.0,5.0,4.6
+Volvo,Volvo XC90,standard,10400000,12.0,247.0,5.0,4.3
+Kia,Kia Carens Clavis,standard,1150000,17.0,135.5,5.0,4.6
+Tata,Tata Punch EV,standard,999000,22.5,120.0,5.0,4.4
+Land Rover,Range Rover Velar,standard,8790000,17.0,224.0,5.0,4.8
+Kia,Kia Sonet,standard,800000,17.0,100.0,5.0,4.4
+Honda,Honda City,standard,1242000,17.5,119.0,5.0,4.6
+Lotus,Lotus Emeya,standard,23400000,17.0,400.0,5.0,4.8
+Skoda,Skoda Kushaq,standard,1099000,18.5,131.0,5.0,4.4
+Skoda,Skoda Kodiaq,standard,4689000,14.0,201.0,5.0,4.8
+Porsche,Porsche Macan,standard,9605000,10.5,337.5,5.0,4.7
+Kia,Kia Syros,standard,950000,18.5,116.0,5.0,4.5
+BYD,BYD Seal,standard,4100000,17.0,193.8,5.0,4.7
+Mahindra,Mahindra Thar,standard,1150000,22.5,133.5,4.0,4.7
+Nissan,Nissan Magnite,standard,614000,18.0,85.0,5.0,4.5
+MG,MG Hector Plus,standard,1750000,16.0,154.5,5.0,4.4
+Kia,Kia EV6,standard,6597000,17.0,193.8,5.0,4.8
+Maruti Suzuki,Maruti Baleno,standard,670000,26.0,82.0,4.0,4.5
+Tata,Tata Nexon EV,standard,1249000,17.0,135.0,5.0,4.4
+Hyundai,Hyundai Ioniq 5,standard,4605000,17.0,217.0,5.0,4.5
+Land Rover,Discovery Sport,standard,6790000,11.5,224.0,5.0,4.2
+BMW,BMW iX,standard,12100000,17.0,193.8,5.0,4.6
+Mahindra,Mahindra Scorpio,standard,1377000,15.0,130.0,4.0,4.8
+MINI,MINI Countryman Electric,standard,5490000,17.0,120.0,5.0,4.4
+Jeep,Jeep Wrangler,standard,6765000,10.5,268.0,5.0,4.8
+MINI,MINI Cooper SE,standard,5300000,17.0,119.0,5.0,4.4
+BMW,BMW i7,standard,20500000,17.0,193.8,5.0,4.8
+BMW,BMW iX1,standard,6690000,10.5,193.8,5.0,4.3
+BMW,BMW X1,standard,5080000,18.0,141.0,5.0,4.5
+MG,MG ZS EV,standard,1550000,17.0,193.8,5.0,4.1
+Maruti Suzuki,Maruti Brezza,standard,869000,21.0,94.5,4.0,4.5
+Toyota,Toyota Vellfire,standard,12200000,19.0,142.0,5.0,4.8
+Isuzu,Isuzu V-Cross,standard,2120000,17.0,161.0,4.0,4.8
+MG,MG Astor,standard,1130000,17.0,123.0,5.0,4.2
+Mahindra,Mahindra XUV400,standard,1549000,17.0,193.8,5.0,3.9
+Citroen,Citroen C3,standard,623000,18.5,94.5,5.0,4.4
+Tata,Tata Tiago,standard,500000,23.5,78.5,4.0,4.4
+Citroen,Citroen Aircross,standard,862000,17.5,94.5,5.0,4.6
+Jeep,Jeep Meridian,standard,2499000,15.0,168.0,5.0,4.4
+Jeep,Jeep Grand Cherokee,standard,6750000,17.0,268.0,5.0,4.3
+Isuzu,Isuzu MU-X,standard,3500000,17.0,161.0,4.0,4.6
+Tata,Tata Tiago NRG,standard,720000,23.0,78.5,4.0,4.7
+Toyota,Toyota Urban Cruiser Taisor,standard,774000,23.5,87.5,4.0,4.6
+BYD,BYD Atto 3,standard,2499000,17.0,193.8,5.0,3.9
+Tata,Tata Tigor,standard,600000,23.5,78.5,4.0,4.5
+MG,MG Gloster,standard,4107000,12.5,185.5,5.0,4.2
+Jeep,Jeep Compass,standard,1899000,15.0,166.5,5.0,4.2
+Hyundai,Hyundai Tucson,standard,2927000,17.0,169.0,5.0,3.9
+Citroen,Citroen eC3,standard,1284000,17.0,71.0,5.0,4.4
+Citroen,Citroen Basalt,standard,832000,18.5,94.0,4.0,4.6
+Tata,Tata Tiago EV,standard,799000,22.5,73.0,4.0,4.5
+Maruti Suzuki,Maruti Ciaz,standard,942000,24.0,96.0,4.0,4.3
+Maruti Suzuki,Maruti Ertiga,standard,897000,23.0,94.5,3.0,4.6
+Kia,Kia Seltos,standard,1119000,18.5,135.5,3.0,4.7
+Maruti Suzuki,Maruti Fronx,standard,754000,24.0,87.5,3.0,4.6
+Renault,Renault Triber,standard,615000,18.5,71.0,4.0,4.5
+Renault,Renault Kiger,standard,615000,19.0,85.0,4.0,4.5
+Hyundai,Hyundai Creta,standard,1111000,17.0,135.5,3.0,4.6
+Honda,Honda Amaze 2nd Gen,standard,766000,21.0,88.5,4.0,4.3
+Hyundai,Hyundai Venue,standard,794000,20.0,100.0,3.0,4.6
+Hyundai,Hyundai Exter,standard,621000,23.0,75.0,3.0,4.6
+Kia,Kia Carens,standard,1141000,17.0,135.5,3.0,4.5
+Hyundai,Hyundai Creta N Line,standard,1693000,17.0,158.0,3.0,4.7
+Hyundai,Hyundai Venue N Line,standard,1215000,18.0,118.0,3.0,4.8
+Maruti Suzuki,Maruti Ignis,standard,585000,20.0,82.0,3.0,4.7
+Maruti Suzuki,Maruti XL6,standard,1183000,23.0,94.5,3.0,4.4
+Mahindra,Mahindra Bolero,standard,981000,16.0,75.0,3.0,4.6
+Hyundai,Hyundai i20,standard,704000,17.0,84.5,3.0,4.6
+Hyundai,Hyundai Alcazar,standard,1499000,17.0,136.0,3.0,4.6
+Maruti Suzuki,Maruti Swift,standard,649000,28.0,74.5,2.0,4.6
+Hyundai,Hyundai i20 N Line,standard,999000,17.0,118.0,3.0,4.6
+Force Motors,Force Motors Gurkha,standard,1675000,17.0,138.0,3.0,4.5
+Force Motors,Force Motors Trax Cruiser,standard,1383000,17.0,90.0,3.0,4.7
+Maruti Suzuki,Maruti Alto K10,standard,423000,28.5,62.0,2.0,4.6
+Mahindra,Mahindra Marazzo,standard,1459000,17.0,121.0,4.0,4.3
+Kia,Kia Carnival,standard,6391000,14.0,190.0,5.0,2.6
+Nissan,Nissan X-Trail,standard,4992000,13.0,161.0,5.0,2.7
+Toyota,Toyota Glanza,standard,690000,26.0,82.5,2.0,4.6
+Maruti Suzuki,Maruti Wagon R Flex Fuel,standard,850000,22.5,78.0,2.0,4.5
+Tata,Tata Tigor EV,standard,1249000,17.0,75.0,4.0,3.6
+Citroen,Citroen C5 Aircross,standard,3999000,17.0,174.0,4.0,4.1
+Toyota,Toyota Hilux,standard,3040000,17.0,201.0,3.0,3.8
+Hyundai,Hyundai Aura,standard,654000,17.0,75.0,2.0,4.6
+Hyundai,Hyundai Grand i10 Nios,standard,598000,17.0,75.0,2.0,4.5
+Maruti Suzuki,Maruti Wagon R,standard,579000,28.5,73.0,1.0,4.5
+Maruti Suzuki,Maruti Eeco,standard,570000,22.5,76.0,1.0,4.6
+Maruti Suzuki,Maruti Jimny,standard,1276000,16.0,103.0,3.0,3.5
+Mahindra,Mahindra Bolero Neo,standard,997000,17.0,100.0,1.0,4.6
+Maruti Suzuki,Maruti S-Presso,standard,426000,28.0,61.0,1.0,4.4
+Maruti Suzuki,Maruti Celerio,standard,564000,29.5,61.0,2.0,3.2
+Renault,Renault Kwid,standard,470000,21.5,67.0,1.0,4.4
